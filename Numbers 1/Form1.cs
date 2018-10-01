@@ -29,5 +29,18 @@ namespace Numbers_1
             richTextBox1.AppendText(d1.ToString("0.0E0") + "\n");
             richTextBox1.AppendText(d1.ToString("00.00E00") + "\n");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string st = "three ";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + "is not an integer");
+            }
+        }
     }
 }
